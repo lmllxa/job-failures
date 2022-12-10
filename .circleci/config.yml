@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: pwd
       - run: ls -al
-      - run: ./.circleci/errors.sh
+      - run: ./.circleci/project/errors.sh
       - run:
           name: on error
           command: echo "hello error!"
