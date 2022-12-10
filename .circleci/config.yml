@@ -8,6 +8,7 @@ jobs:
           name: code test
           command: |
             test() {
+              echo "runtime errors"
               return 1
             }
             test
