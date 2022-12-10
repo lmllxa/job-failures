@@ -4,9 +4,13 @@ jobs:
     docker: 
       - image: circleci/node:13.8.0
     steps:
-      - run: pwd
-      - run: ls -al
-      - run: ./.circleci/project/errors.sh
+      - run:
+          name: code test
+          command: |
+            test() {
+              return 1
+            }
+            test
       - run:
           name: on error
           command: echo "hello error!"
